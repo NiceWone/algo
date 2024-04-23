@@ -2,12 +2,12 @@ package leetcode
 
 //[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 fun main() {
-    var grid: Array<IntArray> = Array(0) { IntArray(0) }
-//    val s = readln()
-    val s = "[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]"
+//    val s = "[[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]"
 //    val s = "[[1]]"
 //    val s = "[[1,0]]"
+    val s = readln()
     var substring = s.substring(1, s.length - 1)
+    var grid: Array<IntArray> = Array(0) { IntArray(0) }
     while (substring.isNotEmpty()) {
         val startIndex = substring.indexOf('[') + 1
         val endIndex = substring.indexOf(']')
