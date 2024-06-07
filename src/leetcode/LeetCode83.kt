@@ -1,11 +1,5 @@
 package leetcode
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-    override fun toString(): String {
-        return "$`val`->${next}"
-    }
-}
 /*
 1,2,3,4,5
 1,1,2
