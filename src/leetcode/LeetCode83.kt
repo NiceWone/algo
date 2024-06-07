@@ -14,19 +14,7 @@ class ListNode(var `val`: Int) {
 fun main() {
     val list = readln().split(",").map { it.toInt() }
 
-    var listNode: ListNode? = null
-    var head: ListNode? = null
-    list.map {
-        if (listNode == null) {
-            listNode = ListNode(it)
-            head = listNode!!
-        } else {
-            while (head!!.next != null) {
-                head = head!!.next
-            }
-            head!!.next = ListNode(it)
-        }
-    }
+    val listNode = listNode(list)
     println(listNode)
     deleteDuplicates(listNode)
     println(listNode)
